@@ -44,6 +44,11 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "videos"
+    },
+    "category": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
