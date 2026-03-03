@@ -72,6 +72,12 @@
       "target": "api::media.media",
       "private": true,
       "mappedBy": "author"
+    },
+    "videos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::video.video",
+      "mappedBy": "author"
     }
   }
 }
