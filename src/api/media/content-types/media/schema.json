@@ -4,7 +4,7 @@
   "info": {
     "singularName": "media",
     "pluralName": "medias",
-    "displayName": "Media"
+    "displayName": "Blogs"
   },
   "options": {
     "draftAndPublish": true

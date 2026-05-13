@@ -787,7 +787,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
 export interface ApiMediaMedia extends Struct.CollectionTypeSchema {
   collectionName: 'medias';
   info: {
-    displayName: 'Media';
+    displayName: 'Blogs';
     pluralName: 'medias';
     singularName: 'media';
   };
