@@ -78,6 +78,18 @@
       "relation": "oneToMany",
       "target": "api::video.video",
       "mappedBy": "author"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "author"
+    },
+    "podcasts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::podcast.podcast",
+      "mappedBy": "author"
     }
   }
 }

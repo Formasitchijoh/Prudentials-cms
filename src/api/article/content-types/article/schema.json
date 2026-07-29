@@ -13,46 +13,53 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 100,
+      "required": true
     },
     "description": {
-      "type": "text",
-      "maxLength": 80
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
-    },
-    "cover": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
+      "type": "text"
     },
     "author": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::author.author",
+      "target": "plugin::users-permissions.user",
       "inversedBy": "articles"
     },
-    "category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category.category",
-      "inversedBy": "articles"
+    "url": {
+      "type": "text"
     },
-    "blocks": {
-      "type": "dynamiczone",
-      "components": [
-        "shared.media",
-        "shared.quote",
-        "shared.rich-text",
-        "shared.slider"
+    "section": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "News",
+        "History",
+        "Culture"
       ]
+    },
+    "tag": {
+      "type": "enumeration",
+      "enum": [
+        "Today",
+        "Opinion",
+        "Africa",
+        "World",
+        "Finance & Economics",
+        "North",
+        "Central",
+        "East",
+        "West",
+        "South",
+        "Diaspora"
+      ]
+    },
+    "isVideo": {
+      "type": "boolean",
+      "default": false
+    },
+    "youtubeUrl": {
+      "type": "text"
     }
   }
 }
