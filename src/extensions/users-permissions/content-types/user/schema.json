@@ -90,6 +90,10 @@
       "relation": "oneToMany",
       "target": "api::podcast.podcast",
       "mappedBy": "author"
+    },
+    "isSuperAdmin": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
